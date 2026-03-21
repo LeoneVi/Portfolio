@@ -47,7 +47,7 @@ function Maps() {
 export default function Adventures() {
     return (
         <div>
-            <Link to="/" className={styles.backArrow}>←g</Link>
+            <Link to="/" className={styles.backArrow}>←</Link>
             <h1>My Adventures</h1>
             <h2>Countries I've visited</h2>
             <Maps/>
