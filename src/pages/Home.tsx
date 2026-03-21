@@ -37,7 +37,7 @@ function Img() {
 function MainContent() {
     return (
 
-        <div className={styles.mainContent}>
+        <div>
             <div className={styles.links}>
                 <a href="https://github.com/LeoneVi">GitHub</a>
                 <span> | </span>

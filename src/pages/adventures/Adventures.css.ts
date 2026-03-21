@@ -4,14 +4,14 @@ import { vars } from "../../styles/theme.css";
 export const maps = style({
     display: "flex",
     flexWrap: "wrap",
-    gap: "0.5rem",
+    gap: vars.spacing.sm,
 });
 
 export const center = style({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    gap: "0.5rem",
+    gap: vars.spacing.sm,
 });
 
 export const backArrow = style({

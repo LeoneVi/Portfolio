@@ -5,22 +5,17 @@ export const layout = style({
   display: "flex",
 });
 
-export const mainContent = style({
-  flex: 1,
-});
-
 export const links = style({
-  display: "flex",
   alignItems: "center",
-  gap: "0.5rem",
+  gap: vars.spacing.xs,
   fontSize: vars.typography.fontSize.base,
 });
 
 export const buttons = style({
   display: "flex",
   flexWrap: "wrap",
-  gap: "0.5rem",
-  paddingTop: vars.spacing.xs
+  gap: vars.spacing.sm,
+  paddingTop: vars.spacing.md
 });
 
 export const imageDisplay = style({
