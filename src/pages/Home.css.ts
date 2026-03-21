@@ -1,9 +1,14 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "../styles/theme.css.ts"
 
 export const layout = style({
   display: "flex",
-  gap: "1.5rem",
+  gap: "2rem",
   alignItems: "flex-start",
+  padding: "2rem",
+  fontFamily: "monospace",
+  minHeight: "100vh",
+  color: vars.color.ivory,
 });
 
 export const mainContent = style({
@@ -24,6 +29,6 @@ export const buttons = style({
 });
 
 export const image = style({
-  width: "8rem",
+  width: vars.image.lg,
   border: "2px solid #6b7280",
 });
