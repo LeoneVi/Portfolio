@@ -42,6 +42,8 @@ function MainContent() {
                 <a href="https://github.com/LeoneVi">GitHub</a>
                 <span> | </span>
                 <a href="https://www.linkedin.com/in/victoria-leone-b27162270/">LinkedIn</a>
+                <span> | </span>
+                <a><Link to="/portfolio">Portfolio</Link></a>
             </div>
 
             <h1>Tory's Website</h1>
