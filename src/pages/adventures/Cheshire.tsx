@@ -4,7 +4,8 @@ import * as styles from "./Adventures.css.ts";
 export default function Cheshire() {
     return (
         <div>
-            <Link to="/adventures" className={styles.backArrow}>←</Link>            <h1>My adventure in Cheshire</h1>
+            <Link to="/adventures" className={styles.backArrow}>←</Link>
+            <h1>My adventure in Cheshire</h1>
             <h2>Ashuwillticook Trail | May 14, 2025 </h2>
             <p>
                 I borrowed a book about bike trails from my library, and discovered a trail
@@ -122,7 +123,7 @@ export default function Cheshire() {
                 The trail finishes off with a view of the highest point in Massachusetts, mount Greylock!
             </p>
             <div className={styles.center}>
-                <img src={"/adventures/cheshire/mntGreylock.jpeg"} alt={"Susan B Anthony Birthplace Museum"}
+                <img src={"/adventures/cheshire/mntGreylock.jpeg"} alt={"Mount greylock"}
                      width="30%"/>
             </div>
 
