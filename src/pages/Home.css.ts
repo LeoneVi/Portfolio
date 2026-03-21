@@ -26,6 +26,7 @@ export const buttons = style({
   display: "flex",
   flexWrap: "wrap",
   gap: "0.5rem",
+  paddingTop: vars.spacing.xs
 });
 
 export const image = style({

@@ -4,8 +4,9 @@ import * as styles from "./Home.css.ts";
 function Buttons() {
     const buttons = [
         { src: "/buttons/umass.png", link: "https://www.umass.edu/", alt: "UMass Amherst" },
+        { src: "/buttons/linux-p.gif", alt: "Linux Powered" },
         { src: "/buttons/banporn.png", link: "https://denshi.org/antiporn", alt: "Ban Porn" },
-        { src: "/buttons/denshi.png", link: "https://denshi.org", alt: "Denshi" }
+        { src: "/buttons/denshi.png", link: "https://denshi.org", alt: "Denshi" },
     ];
 
     return (
@@ -43,11 +44,11 @@ function MainContent() {
                 <a href="https://www.linkedin.com/in/victoria-leone-b27162270/">LinkedIn</a>
             </div>
 
-            <h1>Tory's Portfolio Website</h1>
+            <h1>Tory's Website</h1>
 
             <h2>About me</h2>
             <p>
-                Hello, my name is Tory. I'm a senior CS student at UMass Amherst.
+                Hello, my name is Tory. I'm a CS student at UMass Amherst.
                 I enjoy doing software development, hackathons, and web development.
             </p>
 
