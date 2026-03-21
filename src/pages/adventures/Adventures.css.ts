@@ -1,15 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "../../styles/theme.css";
 
-export const layout = style({
-    display: "flex",
-    flexDirection: "column",
-    padding: "2rem",
-    fontFamily: "monospace",
-    minHeight: "100vh",
-    color: vars.color.ivory,
-});
-
 export const maps = style({
     display: "flex",
     flexWrap: "wrap",

@@ -3,23 +3,17 @@ import { vars } from "../styles/theme.css.ts"
 
 export const layout = style({
   display: "flex",
-  gap: "2rem",
-  alignItems: "flex-start",
-  padding: "2rem",
-  fontFamily: "monospace",
-  minHeight: "100vh",
-  color: vars.color.ivory,
 });
 
 export const mainContent = style({
   flex: 1,
 });
 
-export const contactLinks = style({
+export const links = style({
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
-  fontSize: "1.125rem",
+  fontSize: vars.typography.fontSize.base,
 });
 
 export const buttons = style({
@@ -29,7 +23,14 @@ export const buttons = style({
   paddingTop: vars.spacing.xs
 });
 
+export const imageDisplay = style({
+  float: "right",
+  marginRight: vars.spacing.lg,
+  marginLeft: vars.spacing.lg,
+
+})
+
 export const image = style({
-  width: vars.image.lg,
+  width: vars.image.xl,
   border: "2px solid #6b7280",
 });

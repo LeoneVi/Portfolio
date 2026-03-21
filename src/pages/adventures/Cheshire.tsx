@@ -3,7 +3,7 @@ import * as styles from "./Adventures.css.ts";
 
 export default function Cheshire() {
     return (
-        <div className={styles.layout}>
+        <div>
             <Link to="/adventures" className={styles.backArrow}>←</Link>            <h1>My adventure in Cheshire</h1>
             <h2>Ashuwillticook Trail | May 14, 2025 </h2>
             <p>

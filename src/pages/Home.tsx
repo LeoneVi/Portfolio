@@ -24,7 +24,7 @@ function Buttons() {
 
 function Img() {
     return (
-        <div>
+        <div className={styles.imageDisplay}>
             <img
                 src="/field.jpeg"
                 alt="field"
@@ -38,7 +38,7 @@ function MainContent() {
     return (
 
         <div className={styles.mainContent}>
-            <div className={styles.contactLinks}>
+            <div className={styles.links}>
                 <a href="https://github.com/LeoneVi">GitHub</a>
                 <span> | </span>
                 <a href="https://www.linkedin.com/in/victoria-leone-b27162270/">LinkedIn</a>
