@@ -5,7 +5,6 @@ function Buttons() {
     const buttons = [
         { src: "/buttons/umass.png", link: "https://www.umass.edu/", alt: "UMass Amherst" },
         { src: "/buttons/linux-p.gif", alt: "Linux Powered" },
-        { src: "/buttons/banporn.png", link: "https://denshi.org/antiporn", alt: "Ban Porn" },
         { src: "/buttons/denshi.png", link: "https://denshi.org", alt: "Denshi" },
     ];
 
@@ -54,11 +53,6 @@ function MainContent() {
                 I enjoy doing software development, hackathons, and web development.
             </p>
 
-
-            <h3> Cool things </h3>
-            <ul>
-                <li><Link to="/adventures">My Adventures</Link></li>
-            </ul>
             <Buttons/>
         </div>
     );
