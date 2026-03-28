@@ -56,7 +56,7 @@ function Umaring(){
         const nextUrl = data.next.url;
         const nextName = data.next.name;
         return (
-            <div>
+            <div id="umaring">
                 <a href={prevUrl}>&larr; {prevName}</a>{" "}
                 <a href="https://github.com/umacabal/umaring">umaring</a>{" "}
                 <a href={nextUrl}>{nextName} &rarr;</a>
