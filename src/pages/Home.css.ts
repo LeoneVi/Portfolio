@@ -22,7 +22,13 @@ export const imageDisplay = style({
   float: "right",
   marginRight: vars.spacing.lg,
   marginLeft: vars.spacing.lg,
+  maxWidth: "100%",
+  height: "auto",
+})
 
+export const content = style({
+  flexDirection: "column",
+  minWidth: "280px",
 })
 
 export const image = style({
