@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import * as styles from "./Home.css.ts";
+import {useState, useEffect} from 'react';
+
 
 function Buttons() {
     const buttons = [
@@ -33,6 +35,37 @@ function Img() {
     );
 }
 
+function Umaring(){
+    type UmaringData = {
+        prev: { name: string; url: string };
+        next: { name: string; url: string };
+    };
+
+    const [data, setData] = useState<UmaringData | null>(null);
+    useEffect(() => {
+        fetch('https://umaring.mkr.cx/toryleone')
+            .then(response => response.json())
+            .then(data => setData(data));
+    }, []);
+
+    if(!data){
+        return <h3>loading...</h3>;
+    }else{
+        const prevUrl = data.prev.url;
+        const prevName = data.prev.name;
+        const nextUrl = data.next.url;
+        const nextName = data.next.name;
+        return (
+            <div>
+                <a href={prevUrl}>&larr; {prevName}</a>{" "}
+                <a href="https://github.com/umacabal/umaring">umaring</a>{" "}
+                <a href={nextUrl}>{nextName} &rarr;</a>
+            </div>
+        );
+    }
+
+}
+
 function MainContent() {
     return (
 
@@ -42,7 +75,7 @@ function MainContent() {
                 <span> | </span>
                 <a href="https://www.linkedin.com/in/victoria-leone-b27162270/">LinkedIn</a>
                 <span> | </span>
-                <a><Link to="/portfolio">Portfolio</Link></a>
+                <Link to="/portfolio">Portfolio</Link>
             </div>
 
             <h1>Tory's Website</h1>
@@ -60,9 +93,12 @@ function MainContent() {
 
 export default function Home() {
     return (
-        <div className={styles.layout}>
-            <MainContent/>
-            <Img/>
+        <div>
+            <div className={styles.layout}>
+                <MainContent/>
+                <Img/>
+            </div>
+            <Umaring/>
         </div>
     );
 }
