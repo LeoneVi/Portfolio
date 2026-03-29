@@ -34,37 +34,6 @@ function Img() {
     );
 }
 
-function Umaring(){
-    type UmaringData = {
-        prev: { name: string; url: string };
-        next: { name: string; url: string };
-    };
-
-    const [data, setData] = useState<UmaringData | null>(null);
-    useEffect(() => {
-        fetch('https://umaring.mkr.cx/toryleone')
-            .then(response => response.json())
-            .then(data => setData(data));
-    }, []);
-
-    if(!data){
-        return <div>Loading...</div>;
-    }else{
-        const prevUrl = data.prev.url;
-        const prevName = data.prev.name;
-        const nextUrl = data.next.url;
-        const nextName = data.next.name;
-        return (
-            <div id="umaring" className={styles.buttons}>
-                <a href={prevUrl}>&larr; {prevName}</a>{" "}
-                <a href="https://github.com/umacabal/umaring">umaring</a>{" "}
-                <a href={nextUrl}>{nextName} &rarr;</a>
-            </div>
-        );
-    }
-
-}
-
 function MainContent() {
     return (
         <div>
@@ -92,7 +61,7 @@ export default function Home() {
                 <MainContent/>
                 <div>
                     <Buttons/>
-                    <Umaring/>
+                    <div id="umaring" className={styles.buttons}></div>
                 </div>
             </div>
             <Img/>
