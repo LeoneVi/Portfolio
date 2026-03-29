@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import * as styles from "./Home.css.ts";
-import {useState, useEffect} from 'react';
 
 function Buttons() {
     const buttons = [
